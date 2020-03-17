@@ -1,0 +1,34 @@
+This is the tutorial on how to make an Abby Fitts Task System block!
+
+Please check out the manuel first as it will clear up any terminology questions you may have. 
+The page for this section is p.[insert page number here].
+
+This tutorial and the accompanying function blockMaker.m will guide you through making your very first blockData.mat file. 
+blockData.mat files tell Abby what stimulus to present.
+
+You can see from the manuel that the top row and the last two collumns of a blockData.mat file are clerical information. 
+This information is implict in the data you see in the rest of the block. 
+We include this data for clarity and to help Abby do checks and balences. 
+Check which will ensure your testing runs smoothly an produces acurate results.
+
+To make your first blockData.mat load the myFirstBlock.mat in matlab and open the "blockData" variable.
+blockData is the keyword Abby will look for when trying to make stimuli.
+Make sure the variable stored in your .mat files is called blockData, written exactly like that!
+ 
+All you need to do is fill in the parameters you want for an nx6 matrix (where n = number of trials + 1).
+myFirstBlock.mat has the minimum required information to create a fully functioning block.
+Take note that none of the "nessesary" data required for Abby to run is presant. 
+blockMaker.m will do all that work for you! 
+If you get confused about what goes where just take another look at the manuel.
+
+To fill out the rest of the block just type
+>> blockMaker(blockData, "filename")
+into the MATLAB command line.
+
+If there are no errors (which blockMaker will tell you about if there is!)
+you should see your matrix change in the variable window in MATLAB.
+Once this is done simply type
+>> save("yourfilenamehere.mat", "blockData")
+into command line.
+N.B. You must make the file a .mat file, otherwise Abby wont be able to access your block data!
+

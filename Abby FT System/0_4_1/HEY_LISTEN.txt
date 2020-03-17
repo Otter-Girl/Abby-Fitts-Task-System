@@ -1,0 +1,28 @@
+This is a quick introduction to the Abby Fitts Task System. 
+If you haven't read the user manuel I suggest you do that now.
+
+You can see three folders and some files, I will explain the folders.
+
+	First is the Data folder. 
+	This holds all the information you will collect while making Fitts Trails.
+	The data folders are all made automatically.
+
+	Second is the functions folder.
+	This holds all the functions the Abby system needs.
+	Feel free to poke around if you're familiar with MATLAB.
+
+	Third is the SessionImport folder.
+	Please check this one out! 
+	Check out the tutorial on how to make your own Fitts Task matrix.
+
+Now that you're done having a look through the folders and your curiosity is sated, let's look at the scripts
+There should be two scripts at the moment.
+
+	First you should run initialise.m.
+	This will set up the Abby system on your computer.
+	It will ensure Abby runs correctly for the duration of your research.
+
+	Second is Abby.
+	Run this file when you want to do research.
+	If you have any questions contact the programmer at harry.carr@dcu.ie.
+	She will answer all your questions.
